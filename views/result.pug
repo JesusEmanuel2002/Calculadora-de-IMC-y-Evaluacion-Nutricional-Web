@@ -1,0 +1,16 @@
+doctype html
+html(lang="es")
+  head
+    title Resultado del IMC
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    header
+      h1 Resultado de tu IMC
+    main
+      p Tu IMC es: #{imc}
+      p Categoría: #{categoria}
+      h2 Recomendaciones:
+      p= recomendaciones
+      a(href="/") Volver al inicio
+    footer
+      p © 2025 - Proyecto IMC
