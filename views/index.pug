@@ -15,6 +15,23 @@ html(lang="es")
           label(for="altura") Altura (cm):
           input(type="number", name="altura", id="altura" required)
         div
+          label(for="cintura") Circunferencia de cintura (cm):
+          input(type="number", name="cintura", id="cintura")
+        div
+          label(for="cadera") Circunferencia de cadera (cm):
+          input(type="number", name="cadera", id="cadera")
+        div
+          label(for="sexo") Sexo:
+          select(name="sexo" id="sexo")
+            option(value="hombre") Hombre
+            option(value="mujer") Mujer
+        div
           button(type="submit") Calcular
+
+      section
+        h2 Información Adicional sobre el IMC
+        p El IMC es una herramienta útil, pero no tiene en cuenta factores como la masa muscular, la distribución de grasa o la salud general. Para obtener una evaluación precisa, consulta a un profesional de la salud.
+        p Mantener un estilo de vida saludable, con una dieta balanceada y ejercicio regular, es crucial para tu bienestar.
+
     footer
       p © 2025 - Proyecto IMC
